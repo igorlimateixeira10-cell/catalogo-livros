@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/catalogo-livros/', // <-- Adicione esta linha
+  base: './', // Adicione essa linha se não tiver
 })
