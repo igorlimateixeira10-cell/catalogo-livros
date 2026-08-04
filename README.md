@@ -1,75 +1,24 @@
-# React + TypeScript + Vite
+# Catálogo de Livros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em React com TypeScript e Vite para gerenciamento de um acervo de leitura. O projeto conta com uma pipeline completa de CI/CD configurada via GitHub Actions, garantindo validações automáticas de linter, testes unitários e deploy automatizado.
 
-Currently, two official plugins are available:
+## 🚀 Link do Projeto Publicado
+Acesse o site online: [https://igorlimateixeira10-cell.github.io/catalogo-livros/](https://igorlimateixeira10-cell.github.io/catalogo-livros/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologias Utilizadas
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Vitest & Testing Library (Testes)
+- ESLint (Linter)
+- GitHub Actions (CI/CD)
 
-## React Compiler
+## 📋 Pré-requisitos
+Certifique-se de ter o **Node.js** instalado em sua máquina.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Como Executar o Projeto Localmente
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+1. Clone o repositório e acesse a pasta do projeto:
+```bash
+git clone [https://github.com/igorlimateixeira10-cell/catalogo-livros.git](https://github.com/igorlimateixeira10-cell/catalogo-livros.git)
+cd catalogo-livros
