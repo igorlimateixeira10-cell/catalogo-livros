@@ -32,7 +32,7 @@ jobs:
         run: npm run lint
 
       - name: Run tests
-        run: npm test
+        run: npx vitest run --pool=vmThreads
 
       - name: Build project
         run: npm run build
