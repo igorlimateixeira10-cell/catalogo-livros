@@ -4,7 +4,7 @@ Aplicação web desenvolvida em React com TypeScript e Vite para gerenciamento d
 
 ## 🚀 Link do Projeto Publicado
 
-Acesse o site online: https://igorlimateixeira10-cell.github.io/catalogo-livros/
+Acesse o site online: https://catalogo-livros-ebac1.vercel.app/
 
 ## 🛠️ Tecnologias Utilizadas
 
